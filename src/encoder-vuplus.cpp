@@ -233,9 +233,9 @@ EncoderVuPlus::EncoderVuPlus(const PidMap &pids_in,
 	Util::vlog("audio: %d", audio);
 	Util::vlog("start ioctl");
 
-	if(ioctl(fd, IOCTL_VUPLUS_SET_PMTPID, pmt) ||
-			ioctl(fd, IOCTL_VUPLUS_SET_VPID, video) ||
-			ioctl(fd, IOCTL_VUPLUS_SET_APID, audio))
+	if(ioctl(fd, (IOCTL_VUPLUS_SET_PMTPID + stb_traits.extend_pid), pmt) ||
+			ioctl(fd, (IOCTL_VUPLUS_SET_VPID + stb_traits.extend_pid), video) ||
+			ioctl(fd, (IOCTL_VUPLUS_SET_APID + stb_traits.extend_pid), audio))
 	{
 			throw(trap("EncoderVuPlus: cannot init encoder"));
 	}

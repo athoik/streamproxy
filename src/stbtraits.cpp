@@ -757,6 +757,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 8,
 			.features			= features_vusolose,
+			.extend_pid		= 0,
 		},
 		{
 			.manufacturer		= "VU+",
@@ -772,6 +773,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 8,
 			.features			= features_vusolo2,
+			.extend_pid		= 0,
 		},
 		{
 			.manufacturer		= "VU+",
@@ -787,6 +789,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 8,
 			.features			= features_vuduo2,
+			.extend_pid		= 0,
 		},
 		{
 			.manufacturer		= "VU+",
@@ -802,6 +805,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 8,
 			.features			= features_vusolo4k,
+			.extend_pid		= 10,
 		},
 		{
 			.manufacturer		= "XTrend",
@@ -817,6 +821,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 4,
 			.features			= features_et10000,
+			.extend_pid		= 0,
 		},
 		{
 			.manufacturer		= "Mut@nt",
@@ -832,6 +837,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 4,
 			.features			= features_hd2400,
+			.extend_pid		= 0,
 		},
 		{
 			.manufacturer		= "generic",
@@ -845,6 +851,7 @@ const stbs_traits_t stbs_traits =
 			},
 			.num_features		= 0,
 			.features			= features_generic,
+			.extend_pid		= 0,
 		},
 	},
 };

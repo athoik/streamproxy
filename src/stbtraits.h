@@ -74,6 +74,7 @@ typedef struct
 	const stb_id_t			id[2];
 	size_t					num_features;
 	const stb_feature_t		*features;
+	size_t				extend_pid;
 } stb_traits_t;
 
 typedef struct
